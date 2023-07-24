@@ -21,6 +21,7 @@ const ChatBotApp = () => {
                 temperature: 0.5,
                 max_tokens: 4000,
             });
+            // console.log(result.data.choices[0].text)
             setApiResponse(result.data.choices[0].text);
         } catch(e){
             setApiResponse("Something went wrong. Please try again.");
